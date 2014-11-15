@@ -13,7 +13,7 @@ public class APITest {
     // pay type: "Tip", "Pay", "Deposit" o "Donate"
     private static final String APP_ID = "b91014cc28c94841";
     private static final String APP_SECRET = "c533a6e606fb62ccb13e8baf8a95cbdc";
-    private static final String SERVICE_URL = "http://dev.xapo.com/api/v1";
+    private static final String SERVICE_URL = "https://api.xapo.com/v1";
     private API api;
 
     @Before
