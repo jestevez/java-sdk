@@ -4,15 +4,16 @@ import com.xapo.tools.widgets.MicroPayment;
 import com.xapo.tools.widgets.MicroPaymentConfig;
 import mjson.Json;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
  * Created by frepond on 6/11/14.
  */
 public class APITest {
-    // pay type: "Tip", "Pay", "Deposit" o "Donate"
-    private static final String APP_ID = "b91014cc28c94841";
-    private static final String APP_SECRET = "c533a6e606fb62ccb13e8baf8a95cbdc";
+    // pay type: "Tip", "Pay", "Deposit", "Donate" or "OAuth"
+    private static final String APP_ID = "your app id";
+    private static final String APP_SECRET = "your app secret";
     private static final String SERVICE_URL = "https://api.xapo.com/v1";
     private API api;
 
@@ -21,6 +22,7 @@ public class APITest {
         this.api = new API(SERVICE_URL, APP_ID, APP_SECRET);
     }
 
+    @Ignore("Set app id and secret and remove this line")
     @Test
     public void testCredit() {
         Json result = api.credit("sample@xapo.com", 1, Currency.SAT, "Sample deposit", "");
