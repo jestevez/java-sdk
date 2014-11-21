@@ -1,7 +1,5 @@
 package com.xapo.sdk;
 
-import com.xapo.tools.widgets.MicroPayment;
-import com.xapo.tools.widgets.MicroPaymentConfig;
 import mjson.Json;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -11,7 +9,6 @@ import org.junit.Test;
  * Created by frepond on 6/11/14.
  */
 public class APITest {
-    // pay type: "Tip", "Pay", "Deposit", "Donate" or "OAuth"
     private static final String APP_ID = "your app id";
     private static final String APP_SECRET = "your app secret";
     private static final String SERVICE_URL = "https://api.xapo.com/v1";
